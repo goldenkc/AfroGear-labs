@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080c12">
+<meta name="description" content="AfroGear Labs — smartphone diagnostics, device repair, robotics and STEM learning in Zimbabwe.">
+<title>AfroGear Labs | Repair. Build. Innovate.</title>
+<style>
+:root{--bg:#080c12;--panel:#101720;--panel2:#0c121a;--gold:#e9bd65;--gold2:#ffd98a;--cyan:#36d9e8;--text:#f4f4f2;--muted:#b6c0c9;--line:#263844;--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}.grid-bg{background-image:linear-gradient(rgba(54,217,232,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(54,217,232,.035) 1px,transparent 1px);background-size:36px 36px}.topline{height:3px;background:linear-gradient(90deg,var(--gold),var(--cyan),transparent)}header{position:sticky;top:0;z-index:20;background:rgba(7,11,17,.94);backdrop-filter:blur(14px);border-bottom:1px solid #1e2a34}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.5px;font-size:1.18rem}.brand-mark{width:39px;height:39px;border:1px solid #8d713d;border-radius:12px;display:grid;place-items:center;color:var(--gold);font-size:1.35rem;background:linear-gradient(145deg,#1a2027,#090c10);box-shadow:0 0 20px #e9bd6510}.brand small{display:block;font-size:.57rem;letter-spacing:3px;color:var(--muted);font-weight:600;margin-top:-5px}.navlinks{display:flex;align-items:center;gap:27px;color:#d2d7db;font-size:.9rem}.navlinks a:hover{color:var(--gold)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid var(--gold);background:var(--gold);color:#101116;padding:12px 18px;border-radius:5px;font-weight:750;transition:.2s;cursor:pointer}.btn:hover{background:var(--gold2);transform:translateY(-1px)}.btn-outline{background:transparent;color:var(--gold)}.btn-cyan{border-color:var(--cyan);background:transparent;color:var(--cyan)}.menu{display:none;background:none;border:1px solid var(--line);color:white;border-radius:5px;padding:8px 11px;font-size:1.2rem}
+.hero{position:relative;overflow:hidden;padding:76px 0 72px;background:radial-gradient(ellipse at 50% 0%,#12333c 0%,#0b141d 40%,#080c12 75%)}.hero:before,.hero:after{content:"";position:absolute;pointer-events:none;opacity:.35}.hero:before{width:350px;height:220px;right:-70px;top:30px;border-top:1px solid var(--cyan);border-left:1px solid var(--cyan);transform:skewY(-25deg);box-shadow:-25px 20px 0 -24px var(--cyan),-50px 40px 0 -49px var(--cyan)}.hero:after{width:250px;height:160px;left:-50px;bottom:20px;border-bottom:1px solid var(--cyan);border-right:1px solid var(--cyan);transform:skewY(-25deg)}.eyebrow{display:inline-flex;gap:9px;align-items:center;padding:7px 12px;border:1px solid #27727b;background:#0b2228;color:#c5f9fb;text-transform:uppercase;letter-spacing:1.2px;font-size:.72rem;font-weight:750}.dot{width:7px;height:7px;background:var(--cyan);border-radius:50%;box-shadow:0 0 12px var(--cyan)}.hero-inner{position:relative;z-index:1;max-width:850px;margin:auto;text-align:center}.hero h1{font-size:clamp(2.25rem,6vw,4.6rem);line-height:1.06;letter-spacing:-2px;margin:23px 0 18px;font-weight:850}.gold{color:var(--gold)}.hero p{max-width:690px;margin:0 auto;color:#c1cbd3;font-size:1.06rem}.hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}.trustline{display:flex;justify-content:center;gap:23px;flex-wrap:wrap;color:#aab9c1;font-size:.79rem;margin-top:31px}.trustline span:before{content:"✦";color:var(--cyan);margin-right:7px}.section{padding:74px 0}.section-head{max-width:700px;margin-bottom:30px}.kicker{color:var(--cyan);font-size:.72rem;font-weight:800;letter-spacing:2px;text-transform:uppercase}.section h2{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.15;letter-spacing:-1px;margin:9px 0 13px}.section-head p{color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{position:relative;background:linear-gradient(145deg,#121b25,#0c1118);border:1px solid #2a414d;border-radius:12px;padding:25px;overflow:hidden}.card:before{content:"";position:absolute;left:25%;right:25%;top:-1px;height:2px;background:var(--cyan);box-shadow:0 0 16px var(--cyan)}.card .num{color:var(--gold);font-size:.78rem;font-weight:800;letter-spacing:1px}.iconbox{width:48px;height:48px;display:grid;place-items:center;border:1px solid #286c75;border-radius:10px;color:var(--cyan);font-size:1.4rem;margin:18px 0}.card h3{font-size:1.17rem;margin:0 0 8px}.card p{font-size:.92rem;color:var(--muted);margin:0 0 16px}.card ul{padding-left:18px;color:#d3dce0;font-size:.86rem;margin:0}.card li{padding:3px 0}.text-link{display:inline-block;color:var(--gold);font-weight:750;font-size:.88rem;margin-top:18px}.feature{display:grid;grid-template-columns:1.05fr .95fr;gap:35px;align-items:center;background:linear-gradient(120deg,#101923,#0a1017);border:1px solid #243945;border-radius:16px;padding:clamp(24px,5vw,50px)}.feature h2{margin-top:10px}.feature p{color:var(--muted)}.feature-list{display:grid;gap:12px;margin:22px 0}.feature-list div{display:flex;gap:11px;align-items:flex-start;color:#dce3e7}.check{color:var(--cyan);font-weight:900}.visual{min-height:320px;position:relative;display:grid;place-items:center;overflow:hidden;border:1px solid #27525b;border-radius:12px;background:radial-gradient(circle at 50% 45%,#17424b,#101923 45%,#0a0f16 78%)}.chip{width:150px;height:150px;border:2px solid var(--gold);border-radius:18px;display:grid;place-items:center;color:var(--gold);font-size:2.4rem;position:relative;box-shadow:0 0 45px #e9bd6520,inset 0 0 35px #e9bd6510}.chip:before,.chip:after{content:"";position:absolute;inset:-18px;border:1px solid var(--cyan);border-radius:23px;opacity:.55}.chip:after{inset:-38px;border-color:#26717a;border-radius:30px}.visual-label{position:absolute;bottom:24px;left:20px;right:20px;text-align:center;color:#d8e3e7;font-size:.88rem}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.step{border-top:1px solid #31505a;padding:19px 15px;background:#0c131a}.step b{display:block;color:var(--gold);font-size:1.5rem;margin-bottom:8px}.step h3{font-size:1rem;margin:0 0 6px}.step p{color:var(--muted);font-size:.86rem;margin:0}.pulse-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.pulse{min-height:175px;border-radius:10px;padding:22px;background:linear-gradient(135deg,#10232b,#0c1219);border:1px solid #254650;display:flex;flex-direction:column;justify-content:space-between}.pulse span{font-size:1.65rem;color:var(--cyan)}.pulse h3{margin:18px 0 4px;font-size:1.05rem}.pulse p{color:var(--muted);font-size:.86rem;margin:0}.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.about-panel{padding:28px;border-left:2px solid var(--gold);background:#101720}.about-panel p{color:var(--muted);margin:0}.contact{background:radial-gradient(ellipse at 80% 20%,#14343b,#0b121a 55%,#080c12);border-top:1px solid #233b45;border-bottom:1px solid #233b45}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:36px;align-items:start}.contact-items{display:grid;gap:13px;margin-top:24px}.contact-item{display:flex;gap:13px;align-items:center;color:#e6ebee}.contact-item .iconbox{margin:0;flex-shrink:0}.formbox{background:#0b1118;border:1px solid #2c4650;border-radius:12px;padding:24px}.formbox h3{margin:0 0 7px}.formbox>p{color:var(--muted);font-size:.9rem;margin:0 0 18px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:.82rem;color:#d8e0e4}.field input,.field select,.field textarea{width:100%;border:1px solid #30414b;background:#101923;color:white;border-radius:6px;padding:11px 12px;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--cyan)}.field textarea{min-height:92px;resize:vertical}.formbox .btn{width:100%;margin-top:15px}.tiny{font-size:.75rem;color:#8f9da7;margin-top:10px}footer{padding:27px 0;color:#95a2ac;font-size:.82rem}.foot{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}.foot strong{color:#e7d4a5}.wa-float{position:fixed;right:18px;bottom:18px;z-index:15;border-radius:50px;background:#20bd68;color:#07140b;padding:13px 17px;font-weight:850;box-shadow:0 8px 30px #0008}.notice{font-size:.8rem;color:#95a7af}
+@media(max-width:800px){.navlinks{display:none;position:absolute;top:76px;left:0;right:0;background:#080c12;padding:20px;width:100%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.menu{display:block}.nav>.btn{display:none}.cards{grid-template-columns:1fr}.feature,.about,.contact-grid{grid-template-columns:1fr}.steps{grid-template-columns:repeat(2,1fr)}.pulse-grid{grid-template-columns:1fr}.visual{min-height:250px}.hero{padding:58px 0}.section{padding:56px 0}.hero h1{letter-spacing:-1.2px}.wrap{width:min(var(--max),calc(100% - 28px))}}
+@media(max-width:430px){.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.steps{grid-template-columns:1fr 1fr}.brand{font-size:1rem}.brand-mark{width:35px;height:35px}.hero p{font-size:.97rem}.trustline{gap:10px}.wa-float{right:12px;bottom:12px;padding:11px 13px;font-size:.84rem}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="AfroGear Labs home">
+      <span class="brand-mark">A</span>
+      <span>AfroGear Labs<small>REPAIR · BUILD · INNOVATE</small></span>
+    </a>
+    <nav class="navlinks" id="navlinks" aria-label="Main navigation">
+      <a href="#services">Services</a><a href="#robotics">Robotics & STEM</a><a href="#about">About</a><a href="#process">The Lab</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-outline" href="#contact">Request a Repair</a>
+    <button class="menu" id="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </div>
+</header>
+<main>
+<section class="hero grid-bg" id="home">
+  <div class="wrap hero-inner">
+    <div class="eyebrow"><span class="dot"></span> Screens · Batteries · Diagnostics · Micro-soldering · Robotics</div>
+    <h1>Building Africa's Future<br>Through <span class="gold">Technology.</span></h1>
+    <p>From precision device care to the next generation of makers, AfroGear Labs is building practical technology skills and dependable repair solutions.</p>
+    <div class="hero-actions"><a class="btn" href="#contact">Request a Repair <span aria-hidden="true">↗</span></a><a class="btn btn-cyan" href="#robotics">Explore Robotics & STEM</a></div>
+    <div class="trustline"><span>Clear communication</span><span>Careful diagnostics</span><span>Built for local needs</span></div>
+  </div>
+</section>
+<section class="section" id="services">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">What we do</div><h2>Technology care, with a <span class="gold">bigger vision.</span></h2><p>Start with a clear diagnosis. Understand the options. Make an informed decision about your device.</p></div>
+  <div class="cards">
+   <article class="card"><div class="num">01 / REPAIR LAB</div><div class="iconbox">▣</div><h3>Smartphone Repair</h3><p>Practical device care, from common faults to more advanced diagnostics.</p><ul><li>Screen and display issues</li><li>Battery and charging faults</li><li>Diagnostics and troubleshooting</li><li>Board-level assessment by enquiry</li></ul><a class="text-link" href="#contact">Enquire about a repair →</a></article>
+   <article class="card" id="robotics"><div class="num">02 / ROBOTICS & STEM</div><div class="iconbox">⌘</div><h3>Future Skills</h3><p>A growing vision for practical learning that helps young people and curious minds explore technology.</p><ul><li>Robotics learning programmes</li><li>Introductory electronics concepts</li><li>STEM workshops and school enquiries</li><li>Hands-on learning opportunities</li></ul><a class="text-link" href="#contact">Ask about programmes →</a></article>
+   <article class="card"><div class="num">03 / INNOVATION HUB</div><div class="iconbox">ϟ</div><h3>Build & Innovate</h3><p>A long-term home for experimenting with hardware, practical problem-solving and new ideas.</p><ul><li>Hardware concepts and prototypes</li><li>Technology project enquiries</li><li>Applied learning and experimentation</li><li>Future collaboration opportunities</li></ul><a class="text-link" href="#contact">Discuss an idea →</a></article>
+  </div>
+ </div>
+</section>
+<section class="section" style="padding-top:0">
+ <div class="wrap feature">
+  <div><div class="kicker">Professional repair lab</div><h2>Good repairs start with <span class="gold">good diagnostics.</span></h2><p>Not every fault has the same cause. Tell us what your device is doing, and we can discuss the next step before any repair is agreed.</p>
+   <div class="feature-list"><div><span class="check">✓</span><span>Explain the fault and device model</span></div><div><span class="check">✓</span><span>Discuss diagnostic options and expected costs</span></div><div><span class="check">✓</span><span>Approve the repair before work proceeds</span></div></div>
+   <a class="btn" href="#contact">Start a Repair Enquiry</a>
+  </div>
+  <div class="visual" aria-label="Abstract microchip and circuit design"><div class="chip">AG</div><div class="visual-label">DEVICE DIAGNOSTICS · REPAIR · QUALITY CHECK</div></div>
+ </div>
+</section>
+<section class="section" id="process">
+ <div class="wrap"><div class="section-head"><div class="kicker">The lab process</div><h2>From enquiry to <span class="gold">next step.</span></h2><p>A simple process designed to keep communication clear.</p></div>
+  <div class="steps"><div class="step"><b>01</b><h3>Tell us</h3><p>Share the device model and what has gone wrong.</p></div><div class="step"><b>02</b><h3>Assess</h3><p>We discuss diagnostic needs and available options.</p></div><div class="step"><b>03</b><h3>Approve</h3><p>Confirm the proposed repair and price before work proceeds.</p></div><div class="step"><b>04</b><h3>Check</h3><p>We communicate the outcome and relevant checks.</p></div></div>
+ </div>
+</section>
+<section class="section" style="padding-top:0">
+ <div class="wrap"><div class="section-head"><div class="kicker">The pulse</div><h2>Technology is more than a <span class="gold">device.</span></h2></div>
+  <div class="pulse-grid"><article class="pulse"><span>⌁</span><div><h3>Precision electronics</h3><p>Understanding faults, components and the systems behind everyday devices.</p></div></article><article class="pulse"><span>⌘</span><div><h3>Hands-on learning</h3><p>Building curiosity and practical skills through robotics and STEM.</p></div></article><article class="pulse"><span>ϟ</span><div><h3>A culture of innovation</h3><p>Making room for experimentation, collaboration and useful solutions.</p></div></article></div>
+ </div>
+</section>
+<section class="section" id="about">
+ <div class="wrap about"><div><div class="kicker">Why AfroGear Labs</div><h2>African-built solutions.<br><span class="gold">Practical technology for the future.</span></h2></div><div class="about-panel"><p>AfroGear Labs is a growing technology venture beginning with smartphone repair and expanding toward robotics, STEM learning and hardware innovation. Our approach is practical: understand the problem, communicate clearly and build skills that matter.</p></div></div>
+</section>
+<section class="section contact" id="contact">
+ <div class="wrap contact-grid">
+  <div><div class="kicker">Let's talk</div><h2>Tell us what you<br><span class="gold">need help with.</span></h2><p style="color:var(--muted)">For repair enquiries, robotics programmes or collaboration, send a message and we'll take it from there.</p>
+   <div class="contact-items">
+    <a class="contact-item" href="https://wa.me/263771923595" target="_blank" rel="noopener"><span class="iconbox">◉</span><span><strong>WhatsApp</strong><br><span style="color:var(--muted)">+263 771 923 595</span></span></a>
+    <div class="contact-item"><span class="iconbox">⌖</span><span><strong>Location</strong><br><span style="color:var(--muted)">Zimbabwe · Contact us for service arrangements</span></span></div>
+    <div class="contact-item"><span class="iconbox">◇</span><span><strong>Website</strong><br><span style="color:var(--muted)">afrogearlabs.co.zw</span></span></div>
+   </div>
+  </div>
+  <form class="formbox" id="repairForm">
+   <h3>Send a repair enquiry</h3><p>Fill in what you know. This opens WhatsApp with your message ready to send.</p>
+   <div class="formgrid">
+    <div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" placeholder="Name" required></div>
+    <div class="field"><label for="phone">Your contact number</label><input id="phone" name="phone" autocomplete="tel" placeholder="+263..." required></div>
+    <div class="field"><label for="device">Device</label><input id="device" name="device" placeholder="e.g. iPhone 12" required></div>
+    <div class="field"><label for="service">What do you need?</label><select id="service" name="service"><option>Smartphone repair</option><option>Screen or display</option><option>Battery or charging</option><option>Diagnostics / board-level fault</option><option>Robotics & STEM programme</option><option>Innovation / collaboration</option><option>Other enquiry</option></select></div>
+    <div class="field full"><label for="details">Describe the issue or enquiry</label><textarea id="details" name="details" placeholder="Tell us what happened and what the device is doing..."></textarea></div>
+   </div>
+   <button class="btn" type="submit">Continue on WhatsApp ↗</button><div class="tiny">No online payment is taken. Your message only sends when you press Send in WhatsApp.</div>
+  </form>
+ </div>
+</section>
+</main>
+<footer><div class="wrap foot"><div><strong>AfroGear Labs</strong> · Repair. Build. Innovate.</div><div>© <span id="year"></span> AfroGear Labs. All rights reserved.</div><div>Zimbabwe</div></div></footer>
+<a class="wa-float" href="https://wa.me/263771923595?text=Hello%20AfroGear%20Labs%2C%20I%27d%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener" aria-label="Chat with AfroGear Labs on WhatsApp">WhatsApp ↗</a>
+<script>
+const menu=document.getElementById('menu'),nav=document.getElementById('navlinks');
+menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'×':'☰'});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('repairForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const v=id=>document.getElementById(id).value.trim();
+ const message=`Hello AfroGear Labs, I'd like to make an enquiry.\n\nName: ${v('name')}\nContact: ${v('phone')}\nDevice / topic: ${v('device')}\nService: ${v('service')}\nDetails: ${v('details')||'Not provided'}\n\nPlease let me know the next steps.`;
+ window.open('https://wa.me/263771923595?text='+encodeURIComponent(message),'_blank','noopener');
+});
+</script>
+</body>
+</html>
