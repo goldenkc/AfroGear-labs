@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore robotics, electronics, coding and STEM learning with AfroGear Labs. Discover hands-on technology programmes and robotics kits.">
+<title>Robotics & STEM | AfroGear Labs</title>
+
+<style>
+:root {
+  --bg: #07111f;
+  --panel: #0d1b2d;
+  --gold: #e6b85c;
+  --cyan: #39d5ed;
+  --white: #f5f7fb;
+  --muted: #aab7c8;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+a { color: inherit; text-decoration: none; }
+header {
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  border-bottom: 1px solid #203047;
+  background: #081321;
+}
+.brand {
+  color: var(--gold);
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.brand span { color: var(--cyan); }
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  font-size: 13px;
+}
+nav a:hover { color: var(--cyan); }
+.hero {
+  padding: 90px 7% 80px;
+  background:
+    radial-gradient(ellipse at 80% 20%, #12344c 0%, transparent 42%),
+    linear-gradient(135deg, #07111f, #0b1a2c);
+}
+.eyebrow {
+  color: var(--cyan);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+h1 {
+  max-width: 750px;
+  font-size: clamp(38px, 7vw, 68px);
+  line-height: 1.08;
+  margin: 18px 0;
+}
+h1 span, h2 span { color: var(--gold); }
+.hero p {
+  max-width: 620px;
+  color: var(--muted);
+  font-size: 17px;
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+.btn {
+  display: inline-block;
+  padding: 13px 19px;
+  border-radius: 5px;
+  background: var(--gold);
+  color: #101723;
+  font-weight: bold;
+  font-size: 14px;
+}
+.btn.secondary {
+  background: transparent;
+  border: 1px solid var(--cyan);
+  color: var(--cyan);
+}
+section { padding: 65px 7%; }
+.section-head { max-width: 680px; margin-bottom: 30px; }
+h2 { font-size: clamp(28px, 4vw, 40px); line-height: 1.2; margin: 10px 0; }
+.section-head p, .card p { color: var(--muted); }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.card {
+  background: var(--panel);
+  border: 1px solid #20334a;
+  border-radius: 10px;
+  padding: 25px;
+}
+.card h3 { margin: 12px 0 8px; font-size: 21px; }
+.symbol { font-size: 30px; }
+.card a { color: var(--cyan); font-weight: bold; font-size: 14px; }
+.kit-label {
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.kit-list {
+  padding-left: 19px;
+  color: var(--muted);
+  font-size: 14px;
+}
+.kit-list li { margin: 6px 0; }
+.note { font-size: 12px; color: #8fa1b5; }
+.cta {
+  text-align: center;
+  background: linear-gradient(135deg, #102940, #0b1727);
+  border-top: 1px solid #20334a;
+  border-bottom: 1px solid #20334a;
+}
+.cta p { max-width: 600px; margin: 12px auto; color: var(--muted); }
+footer {
+  padding: 28px 7%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 12px;
+}
+@media (max-width: 600px) {
+  header { align-items: flex-start; flex-direction: column; }
+  nav { gap: 12px; }
+  .hero { padding-top: 65px; }
+  .grid { grid-template-columns: 1fr; }
+  section { padding-top: 48px; padding-bottom: 48px; }
+}
+</style>
+</head>
+
+<body>
+<header>
+  <a class="brand" href="index.html">AFROGEAR <span>LABS</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#programmes">Programmes</a>
+    <a href="#kits">Robotics Kits</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="eyebrow">Robotics · Electronics · STEM</div>
+    <h1>Build. Code.<br><span>Innovate.</span></h1>
+    <p>
+      Turn curiosity into practical skills. Explore electronics, discover
+      robotics and develop the confidence to create technology through
+      hands-on learning with AfroGear Labs.
+    </p>
+    <div class="actions">
+      <a class="btn" href="#programmes">Explore Programmes</a>
+      <a class="btn secondary" href="#kits">Explore Robotics Kits</a>
+    </div>
+  </section>
+
+  <section id="programmes">
+    <div class="section-head">
+      <div class="eyebrow">Learn by doing</div>
+      <h2>Technology starts with <span>curiosity.</span></h2>
+      <p>
+        From understanding simple circuits to building robotic projects,
+        explore practical learning pathways for the next generation of
+        African innovators.
+      </p>
+    </div>
+
+    <div class="grid">
+      <article class="card">
+        <div class="symbol">⚡</div>
+        <h3>Learn Electronics</h3>
+        <p>Discover circuits, components, sensors and the fundamentals behind everyday technology.</p>
+        <a href="https://wa.me/263771923595?text=Hello%20AfroGear%20Labs%2C%20I%27m%20interested%20in%20electronics%20learning.">Enquire about learning ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="symbol">🤖</div>
+        <h3>Build Robots</h3>
+        <p>Explore motors, controllers and sensors while discovering how robotic systems work.</p>
+        <a href="https://wa.me/263771923595?text=Hello%20AfroGear%20Labs%2C%20I%27m%20interested%20in%20robotics.">Explore robotics ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="symbol">🏫</div>
+        <h3>School STEM Workshops</h3>
+        <p>Discuss practical STEM activities and robotics workshop opportunities for schools and groups.</p>
+        <a href="https://wa.me/263771923595?text=Hello%20AfroGear%20Labs%2C%20I%27d%20like%20to%20discuss%20a%20STEM%20workshop%20for%20a%20school.">Discuss a workshop ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="symbol">💻</div>
+        <h3>Coding & Innovation</h3>
+        <p>Discover how code, logic and creative problem-solving can bring technology projects to life.</p>
+        <a href="https://wa.me/263771923595?text=Hello%20AfroGear%20Labs%2C%20I%27m%20interested%20in%20coding%20and%20innovation.">Register your interest ↗</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="kits">
+    <div class="section-head">
+      <div class="eyebrow">The Robotics Kit Collection</div>
+      <h2>Bring your ideas <span>to life.</span></h2>
+      <p>
+        Explore kit concepts for different experience levels. Contact us
+        to discuss components, suitability and current availability.
+      </p>
+    </div>
+
+    <div class="grid">
+      <article class="card">
+        <div class="symbol">🔌</div>
+        <div class="kit-label">Level 01 · Beginner</div>
+        <h3>Beginner Starter Kit</h3>
+        <p>A starting point for learning basic electronics and simple circuits.</p>
+        <ul class="kit-list">
+          <li>Controller options</li>
+          <li>Breadboard and jumper wires</li>
+          <li>LEDs and resistors</li>
+          <li>Basic circuit experiments</li>
+        </ul>
+        <a href="https://wa.me/263771923595?text=Hello%20AfroGear%20Labs%2C%20I%27m%20interested%20in%20the%20Beginner%20Starter%20Kit.%20Please%20share%20the%20price%20and%20availability.">Enquire about this kit ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="symbol">🛞</div>
+        <div class="kit-label">Level 02 · Builder</div>
+        <h3>Robotics Builder Kit</h3>
+        <p>For learners ready to explore movement, sensing and robotic construction.</p>
+        <ul class="kit-list">
+          <li>Controller options</li>
+          <li>Motors and robot chassis</li>
+          <li>Sensor options</li>
+          <li>Wiring and assembly components</li>
+        </ul>
+        <a href="https://wa.me/263771923595?text=Hello%20AfroGear%20Labs%2C%20I%27m%20interested%20in%20the%20Robotics%20Builder%20Kit.%20Please%20share%20the%20price%20and%20availability.">Enquire about this kit ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="symbol">🧠</div>
+        <div class="kit-label">Level 03 · Advanced</div>
+        <h3>Advanced Project Bundle</h3>
+        <p>For ambitious projects that combine multiple electronic modules and sensors.</p>
+        <ul class="kit-list">
+          <li>Additional sensors and modules</li>
+          <li>Display and interface options</li>
+          <li>Project components</li>
+          <li>Expandable build possibilities</li>
+        </ul>
+        <a href="https://wa.me/263771923595?text=Hello%20AfroGear%20Labs%2C%20I%27m%20interested%20in%20the%20Advanced%20Project%20Bundle.%20Please%20share%20the%20price%20and%20availability.">Enquire about this kit ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="symbol">🎁</div>
+        <div class="kit-label">Schools · Clubs · Families</div>
+        <h3>Need a Custom Kit?</h3>
+        <p>Tell us your budget, age group and project goals so we can discuss suitable kit options.</p>
+        <a href="https://wa.me/263771923595?text=Hello%20AfroGear%20Labs%2C%20I%27d%20like%20help%20choosing%20a%20robotics%20kit.%20Please%20contact%20me.">Build your enquiry ↗</a>
+      </article>
+    </div>
+    <p class="note">Kit categories are proposed offerings. Components, prices and availability must be confirmed before ordering.</p>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="eyebrow">Your next idea starts here</div>
+    <h2>Let's build something <span>meaningful.</span></h2>
+    <p>
+      Interested in a kit, a learning opportunity or a school workshop?
+      Talk to AfroGear Labs directly on WhatsApp.
+    </p>
+    <div class="actions" style="justify-content:center">
+      <a class="btn" href="https://wa.me/263771923595?text=Hello%20AfroGear%20Labs%2C%20I%27d%20like%20to%20make%20an%20enquiry.">Chat with us on WhatsApp</a>
+      <a class="btn secondary" href="index.html">Back to Main Website</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span>© 2026 AfroGear Labs</span>
+  <span>Repair · Robotics · Innovation</span>
+</footer>
+</body>
+</html>
