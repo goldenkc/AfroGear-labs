@@ -48,12 +48,16 @@ nav {
   font-size: 13px;
 }
 nav a:hover { color: var(--cyan); }
+
 .hero {
   padding: 90px 7% 80px;
   background:
-    radial-gradient(ellipse at 80% 20%, #12344c 0%, transparent 42%),
-    linear-gradient(135deg, #07111f, #0b1a2c);
+    linear-gradient(90deg, #07111f 0%, rgba(7,17,31,.96) 35%, rgba(7,17,31,.25) 100%),
+    url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=85") center right / cover no-repeat,
+    #07111f;
+  min-height: 390px;
 }
+
 .eyebrow {
   color: var(--cyan);
   text-transform: uppercase;
