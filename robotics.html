@@ -104,28 +104,34 @@ section { padding: 65px 7%; }
 h2 { font-size: clamp(28px, 4vw, 40px); line-height: 1.2; margin: 10px 0; }
 .section-head p, .card p { color: var(--muted); }
 .grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 18px;
+align-items: stretch;
 }
 
-  .card {
-  background: var(--panel);
-  border: 1px solid #20334a;
-  border-radius: 10px;
-  padding: 20px;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
+.card {
+background: var(--panel);
+border: 1px solid #20334a;
+border-radius: 10px;
+padding: 20px;
+min-width: 0;
+display: flex;
+flex-direction: column;
+align-self: stretch;
 }
+
 .card img {
-  width: 100%;
-  height: 190px;
-  object-fit: cover;
-  display: block;
-  border-radius: 7px;
-  margin-bottom: 18px;
+width: 100%;
+height: 190px;
+object-fit: cover;
+display: block;
+border-radius: 7px;
+margin-bottom: 18px;
 }
+
+
+
 
 .card h3 { margin: 12px 0 8px; font-size: 21px; }
 .symbol { font-size: 30px; }
