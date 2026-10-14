@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+afford<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -108,13 +108,16 @@ h2 { font-size: clamp(28px, 4vw, 40px); line-height: 1.2; margin: 10px 0; }
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
 }
-.card {
+
+  .card {
   background: var(--panel);
   border: 1px solid #20334a;
   border-radius: 10px;
-  padding: 25px;
+  padding: 20px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
 }
-  
 .card img {
   width: 100%;
   height: 190px;
